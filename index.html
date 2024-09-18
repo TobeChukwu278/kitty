@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitty Food</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <div class="wrap">
+    <header>
+        <div class="header-left">
+            <a href="#">
+              <img src="/logo.svg" alt="logo.png">
+              <!-- <img src="/" alt=""> -->
+             </a>
+            <div class="divider hide-mobile"></div>
+            <a href="#" class="home hide-mobile">Home</a>
+        </div>
+
+        <nav>
+            <a href="#" class="menu-open hide-desktop">
+                <img src="menu.svg" alt="open menu">
+            </a>
+            <ul>
+                <li ><a href="#" class="menu-close hide-desktop">
+                    <img src="close.svg" alt="Close menu">
+                </a></li>
+                <li><a href="#">Our Food</a></li>
+                <li><a href="#">Ingredients</a></li>
+                <li><a href="#">Studies</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Your cat will go <img src="/bonkers.svg" alt="image that says Bonkers"></h1>
+        <p class="subhead">
+            The standard chunk of Lorem Ipsum used since the
+             1500s is reproduced below for those interested. 
+             Sections 1.10.32 and 1.10.33 from "de Finibus 
+             Bonorum et Malorum" by Cicero are also reproduced 
+             in their exact original form, accompanied by 
+             English versions from the 1914 translation by 
+             H. Rackham.</p>
+             <a href="#" class="primary-cta">Get Bonkers</a>
+    </main>
+
+    <div class="cat-container">
+        <div class="cat">
+            <img src="cat.png" alt="cat illustration">
+            <div class="outer-circle">
+                <div class="inner-circle">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    const menu = document.querySelector('nav ul');
+    const menuBtn = document.querySelector('.menu-open');
+    const closeBtn = document.querySelector('.menu-close');
+
+    menuBtn.addEventListener('click' , () => {
+        menu.classList.add('open')
+    })
+
+    closeBtn.addEventListener('click' , () => {
+        menu.classList.remove('open')
+    })
+
+</script>
+</body>
+</html>
